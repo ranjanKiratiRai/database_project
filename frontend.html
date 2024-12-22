@@ -5,9 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9; /* Light gray background */
+            color: #333; /* Darker text for better readability */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: #fff; /* White background for contrast */
+            border-radius: 10px; /* Smooth rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #007BFF; /* Accent color */
+        }
+
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #007BFF; /* Blue background */
             color: white; /* White text */
             text-decoration: none; /* Remove underline */
@@ -15,14 +48,22 @@
             border: none;
             cursor: pointer;
             font-size: 16px;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s ease; /* Smooth hover effect */
         }
+
         .button:hover {
             background-color: #0056b3; /* Darker blue on hover */
+            box-shadow: 0 4px 12px rgba(0, 91, 179, 0.4); /* Add shadow on hover */
         }
     </style>
 </head>
 <body>
-    <a href="registration.html" class="button">Register</a>
-    <a href="login.html" class="button">Login</a>
+    <div class="container">
+        <h1>Welcome</h1>
+        <a href="registration.html" class="button">Register</a>
+        <a href="login.html" class="button">Login</a>
+    </div>
 </body>
 </html>
